@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Choices</title>
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+    img {
+      width: 100px; /* Adjust the image size as needed */
+      height: 100px; /* Adjust the image size as needed */
+      cursor: pointer;
+      margin: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Choices presented as images -->
+<img src="Picture1.jpg" alt="Choice 1" onclick="recordResponse('Choice 1')">
+<img src="Picture2.jpg" alt="Choice 2" onclick="recordResponse('Choice 2')">
+<img src="Picture3.jpg" alt="Choice 3" onclick="recordResponse('Choice 3')">
+
+<!-- Display the recorded response (for demonstration purposes) -->
+<p id="response"></p>
+
+<!-- JavaScript to record the user's response -->
+<script>
+  function recordResponse(choice) {
+    // You can perform further actions with the user's choice here
+    // For demonstration, let's just display the choice
+    document.getElementById('response').innerText = 'You chose: ' + choice;
+  }
+</script>
+
+</body>
+</html>
